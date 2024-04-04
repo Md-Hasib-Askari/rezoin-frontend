@@ -1,4 +1,0 @@
-Discover and connect with a vibrant online community on REZOIN.
-            Share experiences, network, and stay updated effortlessly.
-
-        <img src="/assets/RezoinLogo.png" alt="" width={300} height={200}/>

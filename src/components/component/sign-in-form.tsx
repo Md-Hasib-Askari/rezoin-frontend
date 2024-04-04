@@ -22,7 +22,6 @@ export const SignInForm: React.FC<SignInFormProps> = () => {
     setEmail(e.target.value);
   };
 
-
   return (
     <Card className="mx-auto max-w-sm">
       <CardHeader className="space-y-1">
