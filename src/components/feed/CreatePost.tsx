@@ -2,6 +2,7 @@ import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import React from "react";
+import Link from "next/link";
 
 export const CreatePost = () => {
   return (
@@ -11,9 +12,12 @@ export const CreatePost = () => {
           <AvatarImage src="https://github.com/shadcn.png" />
           <AvatarFallback>CN</AvatarFallback>
         </Avatar>
-        <Button className="w-full rounded-full bg-gray-600 text-left">
+        <Link
+          href="/post"
+          className="w-full rounded-full bg-gray-600 text-left pl-4 flex items-center"
+        >
           What's on your brain?
-        </Button>
+        </Link>
       </div>
       <hr className="border-t-gray-600" />
       <div className="flex flex-row gap-5">

@@ -15,17 +15,22 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
   children,
+  modal,
 }: Readonly<{
   children: React.ReactNode;
+  modal: React.ReactNode;
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className={`${inter.className} relative`}>
         <div>
           <Navbar />
           <div className="flex h-[93vh]">
             <LeftSidebar />
-            <main className="flex-grow bg-black pt-8 px-8">{children}</main>
+            <main className="flex-grow bg-black pt-8 px-8">
+              {children}
+              {modal}
+            </main>
             <RightSidebar />
           </div>
         </div>
